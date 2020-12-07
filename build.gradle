@@ -17,3 +17,9 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+/*encoding utf-8 설정 추가. 2020-12-07*/
+compileJava.options.encoding='UTF-8'
+
+tasks.withType(JavaCompile){
+    options.encoding = 'UTF-8'
+}
