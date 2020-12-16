@@ -1,6 +1,6 @@
 package forTest.test201208;
 
-import java.io.BufferedReader;
+import java.io.*;
 import java.util.Scanner;
 
 public class Main {
@@ -49,8 +49,38 @@ public class Main {
         System.out.println(res);*/
 
         /*
-        문제번호 15552.
+        문제번호 15552. 빠른 A+B
+        java의 경우 scanner, System.out.print 대신 BufferedReader, BufferedWriter
+        를 사용할 것
          */
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        StringBuffer sb = new StringBuffer();
+
+        try{
+            int roop = Integer.parseInt(br.readLine());
+
+            for(int i = 0; i < roop; i++){
+                int a = 0;
+                String[] strArr = br.readLine().split(" ");
+                for(int j = 0; j < strArr.length; j++){
+                    a += Integer.parseInt(strArr[j]);
+                }
+                sb.append(a + "\n");
+            }
+
+            bw.write(sb.toString());
+            bw.flush();
+            bw.close();
+
+            br.close();
+        }catch (IOException io){
+            System.out.println(io.getMessage());
+        }
+
 
     }
 }
