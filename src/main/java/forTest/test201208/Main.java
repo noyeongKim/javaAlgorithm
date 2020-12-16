@@ -1,15 +1,15 @@
 package forTest.test201208;
 
-import java.io.*;
 import java.util.Scanner;
+import java.io.*;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        //Scanner sc = new Scanner(System.in);
+
         /*
         문제번호 2739. 구구단단
         */
-
         /*
         int a = sc.nextInt();
         for(int i = 0; i < 9; i++){
@@ -27,7 +27,6 @@ public class Main {
         /*int t = sc.nextInt();
         int a;
         int b;
-
         for(int i = 0; i < t; i++){
             a = sc.nextInt();
             b = sc.nextInt();
@@ -41,11 +40,9 @@ public class Main {
 
         /*int a = sc.nextInt();
         int res = 0;
-
         for(int i = 0; i < a; i++){
             res = res + i + 1;
         }
-
         System.out.println(res);*/
 
         /*
@@ -54,15 +51,13 @@ public class Main {
         를 사용할 것
          */
 
+        /*
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-
         StringBuffer sb = new StringBuffer();
 
         try{
             int roop = Integer.parseInt(br.readLine());
-
             for(int i = 0; i < roop; i++){
                 int a = 0;
                 String[] strArr = br.readLine().split(" ");
@@ -71,15 +66,54 @@ public class Main {
                 }
                 sb.append(a + "\n");
             }
-
             bw.write(sb.toString());
             bw.flush();
             bw.close();
-
             br.close();
         }catch (IOException io){
             System.out.println(io.getMessage());
+        }*/
+
+        /*
+        문제 2741. N찍기
+        1부터 N만큼 숫자 찍어내기
+         */
+        /*
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        try {
+            int roop = Integer.parseInt(br.readLine());
+            for(int i = 0; i < roop; i++){
+                bw.write(String.valueOf(i+1));
+                bw.newLine();
+            }
+            bw.flush();
+            bw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+        */
+
+        /*
+        문제 2741. N찍기
+        N부터 1까지 숫자 찍어내기
+         */
+
+        /*
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        try {
+            int roop = Integer.parseInt(br.readLine());
+            for(int i = 0; i < roop; i++){
+                bw.write(String.valueOf(roop-i));
+                bw.newLine();
+            }
+            bw.flush();
+            bw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        */
 
 
     }
