@@ -36,10 +36,8 @@ public class Main {
 
             br.close();                 // BufferedReader 종료
         }catch (IOException i){
-            System.out.println(i.getMessage());
+            i.printStackTrace();
         }
-
-
     }
 
 }
