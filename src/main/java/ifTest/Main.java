@@ -16,14 +16,13 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        /*
         if(a > b) {
             System.out.println(">");
         } else if (a < b) {
             System.out.println("<");
         } else {
             System.out.println("==");
-        }*/
+        }
 
         ////////////////////////////////////////////////////////////////////////////////////////////
         // 2020.12.08
@@ -38,7 +37,7 @@ public class Main {
         나머지 점수는 F를 출력하는 프로그램을 작성하시오.
          */
 
-        /*if(a >= 90 && a <= 100){
+        if(a >= 90 && a <= 100){
             System.out.println("A");
         } else if (a >= 80 && a <= 89) {
             System.out.println("B");
@@ -48,7 +47,7 @@ public class Main {
             System.out.println("D");
         } else {
             System.out.println("F");
-        }*/
+        }
 
         /*
         문제번호 2753. 윤년표시
@@ -59,11 +58,11 @@ public class Main {
         하지만, 2000년은 400의 배수이기 때문에 윤년이다.
          */
 
-        /*if((a % 4 == 0) && (a % 100 != 0 || a % 400 == 0)){
+        if((a % 4 == 0) && (a % 100 != 0 || a % 400 == 0)){
             System.out.println("1");
         } else {
             System.out.println("0");
-        }*/
+        }
 
         /*
         문제번호 14681. 사분면 고르기
@@ -74,7 +73,7 @@ public class Main {
         점의 좌표를 입력받아 그 점이 어느 사분면에 속하는지 알아내는 프로그램을 작성하시오. 단, x좌표와 y좌표는 모두 양수나 음수라고 가정한다.
          */
 
-        /*if(a > 0 && b > 0){
+        if(a > 0 && b > 0){
             System.out.println("1");
         } else if (a < 0 && b > 0) {
             System.out.println("2");
@@ -82,7 +81,7 @@ public class Main {
             System.out.println("3");
         } else {
             System.out.println("4");
-        }*/
+        }
 
         /*
         문제번호 2884 알람시계
