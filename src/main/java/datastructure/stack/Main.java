@@ -18,5 +18,7 @@ public class Main {
         stackTest.printAll();
 
         System.out.println("stack size is " + stackTest.getSize());
+
+
     }
 }
